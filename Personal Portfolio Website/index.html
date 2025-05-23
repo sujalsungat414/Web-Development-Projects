@@ -1,0 +1,133 @@
+<!--
+I will create a single HTML file for your personal portfolio website with inline
+CSS and JavaScript as per best practice here. The portfolio will have the basic
+sections: a header with your name and tagline, an About Me section, a Projects
+section to showcase some sample projects, and a Contact section with a simple
+form. The style will be modern, clean, and visually appealing with cool fonts
+and colors. The JavaScript will handle the contact form submission with a simple
+alert confirmation, since no backend is requested. Plan: - Create an index.html
+file with inline style and script. - Structure: header, sections (About,
+Projects, Contact). - Style: modern font, nice color scheme, responsive layout.
+- JavaScript: form validation and submission confirmation. No dependent files.
+`portfolio.html` ```html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sujal Sungat</h1>
+      <p>Web Developer | Programmer | Designer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm a passionate developer skilled in creating modern and
+          responsive websites and applications. I love learning new technologies
+          and turning ideas into reality through code. Welcome to my portfolio!
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Rock Paper Scissor Game</h3>
+          <p>
+            A simple and interactive Rock Paper Scissors game implemented with
+            HTML, CSS, and JavaScript. The game allows the player to choose
+            between rock, paper, or scissors to play against the computer. It
+            keeps track of the score and supports score reset.
+          </p>
+          <a
+            href="../RockPaperScissor-App/index.html"
+            target="_blank"
+            rel="noopener"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Tic-Tac-Toe Game</h3>
+          <p>
+            This is a simple Tic-Tac-Toe game built with HTML, CSS, and
+            JavaScript. The game allows two players to play against each other
+            in a classic grid format.
+          </p>
+          <a
+            href="../Tic-Tac-Toe-Game/index.html"
+            target="_blank"
+            rel="noopener"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Todo List</h3>
+          <p>
+            A single-page portfolio site demonstrating modern design and
+            JavaScript interactivity with seamless navigation.
+          </p>
+          <a href="../Todo-List-App/index.html" target="_blank" rel="noopener"
+            >View Project</a
+          >
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label for="name"
+            >Name <span style="color: var(--secondary-color)">*</span></label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            required
+          />
+
+          <label for="email"
+            >Email <span style="color: var(--secondary-color)">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message"
+            >Message <span style="color: var(--secondary-color)">*</span></label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Type your message here..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; 2024 Your Name. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+```

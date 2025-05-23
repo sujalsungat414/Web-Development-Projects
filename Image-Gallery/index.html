@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Simple Image Gallery</h1>
+    <div class="gallery" id="gallery">
+      <!-- Images will be added here by JavaScript -->
+    </div>
+
+    <!-- Modal for displaying large image -->
+    <div class="modal" id="modal">
+      <span class="close-btn" id="closeBtn" title="Close">&times;</span>
+      <span class="nav-arrow nav-prev" id="prevBtn" title="Previous"
+        >&#10094;</span
+      >
+      <span class="nav-arrow nav-next" id="nextBtn" title="Next">&#10095;</span>
+      <div class="modal-content">
+        <img src="" alt="Enlarged image" id="modalImage" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

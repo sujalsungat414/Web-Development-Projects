@@ -1,0 +1,81 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.timer-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+input[type="number"] {
+  width: 80px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+label {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+.time-display {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem 0;
+  letter-spacing: 0.1em;
+  user-select: none;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+button {
+  background-color: #a389e5;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(163, 137, 229, 0.5);
+}
+button:hover:not(:disabled) {
+  background-color: #7559d9;
+}
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}

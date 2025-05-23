@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color Picker & Theme Switcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Theme Switcher</h1>
+    </header>
+    <main>
+      <div class="color-picker-container">
+        <label for="colorPicker">Pick a Background Color:</label><br />
+        <input
+          type="color"
+          id="colorPicker"
+          value="#ffffff"
+          aria-label="Background color picker"
+        />
+      </div>
+      <div class="themes" role="group" aria-label="Theme selection buttons">
+        <button
+          class="theme-btn theme-light"
+          data-bg="#f0f0f0"
+          data-text="#333333"
+        >
+          Light
+        </button>
+        <button
+          class="theme-btn theme-dark"
+          data-bg="#333333"
+          data-text="#f0f0f0"
+        >
+          Dark
+        </button>
+        <button
+          class="theme-btn theme-blue"
+          data-bg="#4a90e2"
+          data-text="#ffffff"
+        >
+          Blue
+        </button>
+        <button
+          class="theme-btn theme-green"
+          data-bg="#27ae60"
+          data-text="#ffffff"
+        >
+          Green
+        </button>
+        <button
+          class="theme-btn theme-purple"
+          data-bg="#8e44ad"
+          data-text="#ffffff"
+        >
+          Purple
+        </button>
+      </div>
+    </main>
+    <footer>&copy; 2024 Color Picker Project</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

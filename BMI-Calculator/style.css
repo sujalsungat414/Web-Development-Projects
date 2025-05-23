@@ -1,0 +1,81 @@
+/* Importing a clean modern font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Basic styling for the entire page */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #72edf2 10%, #5151e5 90%);
+  margin: 0;
+  padding: 0;
+  display: flex; /* Center container horizontally and vertically */
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The white container that holds the calculator */
+.container {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(81, 81, 229, 0.3);
+  width: 320px;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Label styling for inputs */
+label {
+  display: block;
+  margin: 0.75rem 0 0.3rem;
+  font-weight: 600;
+  color: #444;
+  text-align: left;
+}
+
+/* Styling inputs for weight and height */
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+/* Highlight input border when focused */
+input[type="number"]:focus {
+  border-color: #5151e5;
+  outline: none;
+}
+
+/* Styling the Calculate button */
+button {
+  margin-top: 1.5rem;
+  background: #5151e5;
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(81, 81, 229, 0.4);
+  transition: background 0.3s ease;
+}
+/* Darker background on hover */
+button:hover {
+  background: #3a3abf;
+}
+
+/* Styling the area where the BMI result is displayed */
+.result {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #222;
+  min-height: 2.2rem; /* minimum height to prevent layout jump */
+}

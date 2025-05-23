@@ -1,0 +1,70 @@
+/* General styles for paragraphs */
+p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Body styling for full viewport height and flex centering */
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+/* Calculator title styles */
+.cal {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for buttons, centered by default in flex parent */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px); /* 4 columns of 60px */
+  column-gap: 10px;
+  row-gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Button styles */
+button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  font-size: 27px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Styles for operator buttons */
+.yellow-group {
+  background-color: rgb(254, 160, 10);
+}
+
+/* Display styles for the calculation result */
+.show {
+  color: white;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Clear button styles */
+.clear-button {
+  font-size: 20px;
+  margin-top: 20px; /* Add some space above the clear button */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: rgb(80, 80, 80); /* Darker shade on hover */
+}

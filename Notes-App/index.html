@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" role="main">
+      <h1>Simple Notes App</h1>
+      <!-- Form for adding a new note -->
+      <form id="note-form" aria-label="Add a new note">
+        <!-- Optional title input -->
+        <input
+          type="text"
+          id="note-title"
+          placeholder="Title (optional)"
+          aria-label="Note title"
+        />
+        <!-- Content of the note (required) -->
+        <textarea
+          id="note-content"
+          rows="4"
+          placeholder="Write your note here..."
+          required
+          aria-label="Note content"
+        ></textarea>
+        <!-- Submit button -->
+        <button type="submit">Add Note</button>
+      </form>
+      <!-- Container for displaying notes -->
+      <section
+        class="notes-list"
+        id="notes-list"
+        aria-live="polite"
+        aria-label="List of notes"
+      >
+        <!-- Notes will be dynamically inserted here -->
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

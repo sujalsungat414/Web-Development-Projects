@@ -1,0 +1,149 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Universal box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* Container for the app */
+.app-container {
+  background: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  padding: 1.8rem 2rem 2rem;
+}
+
+/* Header styling */
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+/* Input field styling */
+input[type="text"] {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Add button styling */
+button.add-btn {
+  background: #764ba2;
+  border: none;
+  padding: 0 1.1rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+/* Add button hover effect */
+button.add-btn:hover {
+  background: #956bbe;
+}
+
+/* Todo list styling */
+ul.todo-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/* Individual todo item styling */
+ul.todo-list li {
+  background: #292946;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+/* Completed todo item styling */
+ul.todo-list li.completed {
+  background: #3b3b58;
+  text-decoration: line-through;
+  color: #9091a1;
+}
+
+/* Hover effect for todo items */
+ul.todo-list li:hover {
+  background: #3b3b58;
+}
+
+/* Task label styling */
+.task-label {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+/* Actions container styling */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Action button styling */
+button.action-btn {
+  background: transparent;
+  border: none;
+  color: #bbb;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+/* Action button hover effect */
+button.action-btn:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 420px) {
+  body {
+    padding: 1rem;
+  }
+  .app-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}

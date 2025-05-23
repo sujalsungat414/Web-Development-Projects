@@ -1,0 +1,139 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean readable font */
+  background: linear-gradient(
+    135deg,
+    #74ebd5 0%,
+    #acb6e5 100%
+  ); /* Gradient background */
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex; /* Flex container for centering */
+  justify-content: center; /* Horizontally center */
+  align-items: flex-start; /* Align top */
+}
+
+/* The main container for the notes app */
+.container {
+  background-color: #fff; /* White background for content */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px;
+  width: 100%;
+  padding: 20px 30px 40px 30px; /* Top, right, bottom, left padding */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form container styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between inputs */
+}
+
+/* Style for input text and textarea */
+input[type="text"],
+textarea {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  resize: vertical; /* Allow vertical resize only for textarea */
+  transition: border-color 0.3s ease; /* Smooth border color transition on focus */
+  font-family: inherit;
+}
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5c91e0; /* Highlight border on focus */
+}
+
+/* Submit button styles */
+button {
+  background-color: #5c91e0;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+button:hover {
+  background-color: #3b5bbf; /* Darken button on hover */
+}
+
+/* Container for the notes listing */
+.notes-list {
+  margin-top: 30px;
+}
+
+/* Individual note card styles */
+.note {
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+  position: relative; /* Required for delete button absolute inside note */
+}
+/* Note title appearance */
+.note-title {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+/* Note content appearance */
+.note-content {
+  font-size: 1rem;
+  color: #34495e;
+  white-space: pre-wrap; /* Preserve line breaks */
+  word-break: break-word;
+}
+
+/* Delete button styles - circular and positioned top-right of note */
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 50%; /* Circle shape */
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px; /* Center vertically */
+  text-align: center; /* Center horizontally */
+  padding: 0; /* Remove default padding */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+  transition: background-color 0.2s ease;
+  user-select: none; /* Prevent text selection */
+}
+/* Hover effect for delete button */
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+  body {
+    padding: 15px;
+  }
+  .container {
+    padding: 15px 20px 30px 20px;
+  }
+}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+:root {
+  --primary-color: #3f51b5;
+  --secondary-color: #f50057;
+  --background-color: #f4f6f8;
+  --text-color: #333;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+header {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 3rem auto 5rem;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-weight: 600;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+/* About Section */
+#about p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Projects Section */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.project-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+}
+
+.project-card h3 {
+  margin: 0 0 1rem 0;
+  color: var(--secondary-color);
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.project-card a:hover {
+  border-color: var(--secondary-color);
+}
+
+/* Contact Section */
+form {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 8px var(--secondary-color);
+}
+
+button {
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: var(--primary-color);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
