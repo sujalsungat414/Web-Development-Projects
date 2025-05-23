@@ -44,7 +44,7 @@ Welcome to my personal collection of frontend and JavaScript-based web developme
 2. **Navigate to any project folder:**
 
    ```bash
-   cd Amazon-Clone
+   cd Calculator-App
    ```
 
 3. **Open `index.html` in your preferred browser or live server.**
